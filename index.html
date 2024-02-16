@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecofy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-FF42iPxWOQ0SmzQc1m5lyHbxYj6HcN4&callback=initMap" async defer></script>
+<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+
+
+    <header id="header">
+      <h1>Ecofy</h1>
+      <p> "Revolutionizing Waste Management and Recycling for a Sustainable Future"</p>
+      <br>
+      <a href="#sorting-guide" class="btn">Learn more</a>
+      <nav class="tabs-container">
+        <a href="#about" class="tab">About us</a>
+       
+        <a href="#education-section" class="tab">Goals</a>
+        <a href="#get-involved" class="tab">Get Involved</a>
+        <a href="#contact-us" class="tab">Contact us</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="about" id="about">
+       <div class="box-container">
+        <div class="box">
+          <h1 class="heading">About us</h1>
+          <p>"Ecofy" is a comprehensive initiative that focuses on innovative waste management solutions and promotes recycling to address the United Nations Sustainable Development Goals (SDGs) related to environmental sustainability, specifically Goal 11 (Sustainable Cities and Communities) and Goal 12 (Responsible Consumption and Production). </p>
+          <br>
+          <p>To support these efforts, we propose the development of an interactive and educational website that engages users in sustainable practices.
+          </p>
+        </div>
+          <div class="box">
+            <div class="image">
+              <img src="logo.png" alt=""/>
+            </div>
+          </div>
+       </div> 
+      </section>
+
+
+      <section class="education-section" id="education-section">
+
+        <div class="education-box">
+            <h2>Importance of Waste Management</h2>
+            <p>Waste management is not merely a routine task but a pivotal aspect of preserving our environment. Improper waste disposal poses severe threats to ecosystems, wildlife, and human health. By adopting responsible waste management practices, we contribute to the well-being of our planet and ensure a healthier future for generations to come.</p>
+        </div>
+
+        <div class="education-box">
+            <h2>Environmental Consequences of Waste</h2>
+            <p>Improperly disposed waste, especially non-biodegradable materials, leads to pollution, habitat destruction, and soil contamination. Plastic waste, in particular, poses a significant threat to marine life and ecosystems. Understanding the environmental consequences is the first step towards making informed choices that mitigate these impacts.</p>
+        </div>
+
+        <div class="education-box">
+            <h2>Benefits of Recycling</h2>
+            <p>Recycling is a powerful tool in the fight against environmental degradation. By diverting materials from landfills and giving them a new life, we conserve natural resources, reduce energy consumption, and minimize pollution. Let's explore the transformative benefits that recycling brings to both the environment and our communities.</p>
+        </div>
+
+    </section>
+
+    <section class="sorting-guide" id="sorting-guide">
+
+        <div class="sorting-item">
+            <img src="recyclable.png" alt="Recyclable Icon">
+            <h3>Recyclable Items</h3>
+            <p>Materials that can be recycled. Check for recycling symbols on packaging.</p>
+            <a href="recyclable.html"><button class="learn-more-btn">Learn More</button></a>
+        </div>
+
+        <div class="sorting-item">
+            <img src="compost.png" alt="Compostable Icon">
+            <h3>Compostable Items</h3>
+            <p>Organic waste that can be composted to create nutrient-rich soil.</p>
+            <a href="compostable.html"><button class="learn-more-btn">Learn More</button></a>
+        </div>
+
+        <div class="sorting-item">
+            <img src="non recyclable.png" alt="Non-Recyclable Icon">
+            <h3>Non-Recyclable Items</h3>
+            <p>Materials that cannot be recycled. Dispose of them in the regular trash.</p>
+            <a href="nrecyclable.html"><button class="learn-more-btn">Learn More</button></a>
+        </div>
+
+    </section>
+
+
+      <section id="waste-pickup-locations-section">
+        <h2>Waste Pickup Locations</h2>
+        <div id="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113967.87009190972!2d75.6612936972656!3d26.792333000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc985c20d0615%3A0x45483883e85fd1e1!2sNagar%20Nigam%20Jaipur%20Greater%20Ward%20Number%2099%20Office!5e0!3m2!1sen!2sin!4v1707929068132!5m2!1sen!2sin" width="1250" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section> 
+
+
+      <section>
+        <div id="qr-reader"></div>
+      </section>
+
+
+
+    <section class="recycling-challenges">
+        <h2>Recycling Challenges and Rewards</h2>
+        <div id="challenges-container">
+            <!-- Challenges will be dynamically added here -->
+        </div>
+    </section>
+
+
+
+    <section id="partnerships-section">
+      <h2>Partnerships and Collaborations</h2>
+      <div class="partnership-category">
+          <h3>Corporate and Municipal Partners</h3>
+          <ul id="corporate-list"></ul>
+      </div>
+      <div class="partnership-category">
+          <h3>NGOs and Environmental Organizations</h3>
+          <ul id="ngo-list"></ul>
+      </div>
+  </section>
+
+
+      <section class="get-involved" id="get-involved">
+        <div class="get-involved-section">
+          <h2>Get Involved</h2>
+          <p>Join us in making a difference!</p>
+          <a href="login.html" class="get-started-button">Get Started</a>
+      </div>
+      </section>
+
+
+
+      <section class="contact-us" id="contact-us">
+        <div class="container">
+          <h2>Contact us</h2>
+          <p>Feel free to share your thoughts and provide us with your valuable feedback and help us be better.</p>
+        </div>
+          <div class="container">
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="5442a7c2-fbb0-47a6-ba05-85de33e68141">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <h2>projectpandora@gmail.com</h2>
+           <section class="footer-f">
+            <br>
+            <div class ="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+           </section>
+          <div class="footer-copyright">
+            <h4>©2024 Pandora, Inc. All rights reserved.</h4>
+          </div>
+      </footer>
+  </body>
+</html>
