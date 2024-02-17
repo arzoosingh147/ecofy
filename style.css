@@ -91,7 +91,7 @@ h1 {
 
 p {
   font-size: 15px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   color: #f9fafb;
 }
 
@@ -133,6 +133,7 @@ section  {
 .section {
   height: 100vh;
   display: flex;
+  position: static;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -235,8 +236,13 @@ h3 {
   align-items: center;
 }
 
+.qr{
+  position: static;
+}
+
 #qr-reader{
   align-items: center;
+  
 }
 
 .recycling-challenges {

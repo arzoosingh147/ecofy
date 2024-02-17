@@ -10,9 +10,13 @@ body{
     background-color: #45a049;
 }
 .background{
+    justify-content: center;
+    align-items: center;
     width: 430px;
     height: 520px;
-    position: absolute;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
     left: 50%;
     top: 50%;
 }
@@ -20,10 +24,11 @@ body{
 
 form{
     height: 520px;
-    width: 400px;
+    width: 350px;
+    overflow : hidden;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate( -50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
@@ -35,7 +40,7 @@ form{
 form *{
     font-family: 'Poppins',sans-serif;
     color: black;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     outline: none;
     border: none;
 }
